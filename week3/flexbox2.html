@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox2</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+        body {
+            background-color: white;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            gap: 30px;
+            align-items: center;
+            font-family: "Space Grotesk", sans-serif;
+            height: auto;
+        }
+
+        .logo {
+            padding-right: 100px;
+        }
+
+        button.Requestaquote {
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+            border: rgb(0, 0, 0) 1px solid;
+            border-radius: 8px;
+            text-align: center;
+            height: 45px;
+            width: 155px;
+            font-family: "Space Grotesk", sans-serif;
+        }
+
+
+        .slogan {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: auto;
+            gap: 5px 350px;
+            max-width: 1024px;
+            width: 100%;
+            margin-left: 320px;
+        }
+
+        .box1 {
+            width: 100px;
+        }
+
+        h1 {
+            font-family: "Space Grotesk", sans-serif;
+            font-style: medium;
+            font-size: 45px;
+            font-weight: 500;
+            height: 100px;
+            width: 400px;
+            line-height: 130%;
+            padding-bottom: 70px;
+        }
+
+        button.Bookaconsultation {
+            color: white;
+            background-color: black;
+            border-radius: 8px;
+            text-align: center;
+            height: 40px;
+            width: 170px;
+            font-family: "Space Grotesk", sans-serif;
+        }
+
+        p {
+            height: 90px;
+            width: 400px;
+            font-weight: 400;
+            line-height: 24px;
+            font-size: 16px;
+            font-family: "Space Grotesk", sans-serif;
+            padding-bottom: 10px;
+        }
+
+        img.illustration {
+            width: 75%;
+            padding-top: 50px;
+        }
+
+        .logotypes {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-right: 7%;
+            width: 66%;
+            padding-top: 60px;
+            filter: grayscale(100%);
+            margin-left: 255px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <img class="logo" src="images/Logo.png" width="10%" alt="logo">
+        <div>About us</div>
+        <div>Services</div>
+        <div>Use cases</div>
+        <div>Pricing</div>
+        <div>Blog</div>
+        <button class="Requestaquote">Request a quote</button>
+    </div>
+
+    <div class="slogan">
+        <div class="box1">
+            <h1>Navigating the digital landscape for success</h1>
+            <p>Our digital marketing agency helps businesses grow and succeed online through a range of services
+                including
+                SEO,
+                PPC, social media marketing, and content creation.</p>
+            <button class="Bookaconsultation">Book a consultation</button>
+        </div>
+        <div class="box2">
+            <img class="illustration" src="images/Illustration.png" alt="Illustration">
+        </div>
+    </div>
+
+    <img class="logotypes" src="images/Logotypes.png" width="500" alt="logotypes">
+
+
+
+</body>
+
+</html>
