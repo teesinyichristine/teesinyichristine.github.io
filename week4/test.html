@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <style>
+        .container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .child {
+            width: 50%;
+            background-color: pink;
+        }
+
+        /*mobile view(放在最后)*/
+        /*gap 是两个div之间的间隔*/
+
+        @media screen and (max-width: 580px) {
+
+            body {
+                background-color: aliceblue;
+            }
+
+            .container {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .child {
+                width: 1000%;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cotainer">
+        <div class="child">1 wei shen me wo zai xue bian cheng</div>
+        <div class="child">2 wo dao di zai xue shen me</div>
+    </div>
+    <div class="cotainer2">
+        <div class="child">3 wo dao di zai xue shen me</div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <style>
+        /*desktop view*/
+        @media screen and (max-width: 1532px) {
+
+            .logo {
+                width: 200px;
+            }
+
+            .menu {
+                flex-direction: row;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+            }
+
+            .phone {
+                width: 100%;
+            }
+
+            .Contact {
+                color: white;
+                background-color: orangered;
+                border-radius: 10px;
+                text-align: center;
+                align-items: center;
+                width: 90px;
+                height: 40px;
+            }
+
+
+        }
+
+        /*tablet view*/
+        @media screen and (max-width: 1280px) {
+
+            .menu {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .phone {
+                width: 1000%;
+            }
+
+            .button {
+                display: none;
+            }
+
+
+        }
+
+        /*mobile view*/
+        @media screen and (max-width: 766px) {
+
+            .menu {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .child {
+                width: 1000%;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <img class="logo" src="images/Screenshot 2026-06-30 105134.png">
+        </div>
+        <div class="menu">
+            <div class="Home">Home</div>
+            <div class="Services">Services</div>
+            <div class="Work">Work</div>
+            <div class="Project Details">Project Details</div>
+            <div class="Contact">Contact</div>
+            <div class="hamburger"></div>
+        </div>
+        <div class="phone">
+            <img class="phone" src="images/phone.png">
+            <div class="number">555-123-4567</div>
+        </div>
+        <div><button class="Contact">Contact</button></div>
+    </div>
+
+</body>
+
+</html>
