@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+    body {
+        background-color: white;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1440px;
+        padding: 20px;
+        margin: auto;
+        width: 85%;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 10%;
+    }
+
+    .positivus {
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 500;
+        font-size: 40px;
+        width: 170px;
+    }
+
+    img.logo {
+        width: 100%;
+        height: auto;
+    }
+
+
+    .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        gap: 40px;
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+
+
+    button.Requestaquote {
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        border: rgb(0, 0, 0) 1px solid;
+        border-radius: 14px;
+        text-align: center;
+        height: 68px;
+        width: 231px;
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+
+    .hero {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        gap: 40px;
+        max-width: 1440px;
+        width: 85%;
+    }
+
+    h1 {
+        font-family: "Space Grotesk", sans-serif;
+        font-style: normal;
+        font-size: 60px;
+        font-weight: 500;
+        height: 150px;
+        width: 531px;
+        line-height: 120%;
+        padding-bottom: 70px;
+    }
+
+    button.Bookaconsultation {
+        color: white;
+        background-color: black;
+        border-radius: 16px;
+        text-align: center;
+        gap: 10px;
+        height: 68px;
+        width: 264px;
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .box1text {
+        height: 112px;
+        width: 498px;
+        font-weight: 400;
+        line-height: 28px;
+        font-size: 20px;
+        font-family: "Space Grotesk", sans-serif;
+        padding-bottom: 10px;
+    }
+
+    img.illustration {
+        width: 100%;
+        height: auto;
+    }
+
+    .company {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 85%;
+        margin: auto;
+        gap: 30px;
+        padding-top: 80px;
+        filter: grayscale(100%);
+    }
+
+
+    .label {
+        display: flex;
+        flex-direction: row;
+        align-items: left;
+        margin: auto;
+        gap: 40px;
+        width: 85%;
+        padding-top: 120px;
+    }
+
+    .buttonservices {
+        color: black;
+        background-color: #B9FF66;
+        border-radius: 7px;
+        border: none;
+        text-align: center;
+        gap: 10px;
+        height: 51px;
+        width: 178px;
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 580;
+        font-size: 40px;
+    }
+
+    .servicestext {
+        justify-content: center;
+        height: 46px;
+        width: 580px;
+        font-weight: 400;
+        font-size: 18px;
+        font-family: "Space Grotesk", sans-serif;
+        margin: 0;
+    }
+
+    .greentitle {
+        background-color: #B9FF66;
+        border-radius: 7px;
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 30px;
+        font-weight: 500;
+        font-style: medium;
+    }
+
+    @media screen and (max-width: 500px) {
+        .hero {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <img class="logo" src="images/Icon.png" width="100" alt="logo">
+            <p class="positivus">Positivus</p>
+        </div>
+        <div class="menu">
+            <div>About us</div>
+            <div>Services</div>
+            <div>Use cases</div>
+            <div>Pricing</div>
+            <div>Blog</div>
+            <div><button class="Requestaquote">Request a quote</button></div>
+        </div>
+    </div>
+
+    <div class="hero">
+        <div class="box1">
+            <h1>Navigating the digital landscape for success</h1>
+            <p class="box1text">Our digital marketing agency helps businesses grow and succeed online through a range of
+                services
+                including
+                SEO,
+                PPC, social media marketing, and content creation.</p>
+            <button class="Bookaconsultation">Book a consultation</button>
+        </div>
+        <div class="box2">
+            <img class="illustration" src="images/Illustration.png" alt="Illustration">
+        </div>
+    </div>
+
+    <div class="company">
+        <img src="images/amazon.png" alt="amazon">
+        <img src="images/dribbble.png" alt="dribbble">
+        <img src="images/hubspot.png" alt="hubspot">
+        <img src="images/notion.png" alt="notion">
+        <img src="images/netflix.png" alt="netflix">
+        <img src="images/zoom.png" alt="zoom">
+    </div>
+
+    <div class="label">
+        <button class="buttonservices">Services</button>
+        <p class="servicestext">At our digital marketing agency, we offer a range of services to help businesses grow
+            and succeed online.
+            These services include:</p>
+    </div>
+
+    <div class="section1">
+        <div class="section1left">
+            <span class="greentitle">
+                Search engine optimization
+            </span>
+            <p class="sectiontext">Learn more</p>
+        </div>
+        <div class="section1right">
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
