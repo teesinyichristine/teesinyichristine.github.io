@@ -73,9 +73,9 @@
     .hero {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: stretch;
         margin: auto;
-        gap: 40px;
+        gap: 50px;
         max-width: 1440px;
         width: 85%;
     }
@@ -85,10 +85,9 @@
         font-style: normal;
         font-size: 60px;
         font-weight: 500;
-        height: 150px;
-        width: 531px;
+        max-width: 531px;
+        width: 100%;
         line-height: 120%;
-        padding-bottom: 70px;
     }
 
     button.Bookaconsultation {
@@ -106,8 +105,8 @@
     }
 
     .box1text {
-        height: 112px;
-        width: 498px;
+        max-width: 498px;
+        width: 100%;
         font-weight: 400;
         line-height: 28px;
         font-size: 20px;
@@ -157,13 +156,15 @@
     }
 
     .servicestext {
+        display: flex;
         justify-content: center;
+        text-align: center;
         height: 46px;
-        width: 580px;
+        width: 100%;
         font-weight: 400;
         font-size: 18px;
         font-family: "Space Grotesk", sans-serif;
-        margin: 0;
+        margin: 0 auto;
     }
 
     .sectioncontainer {
@@ -356,7 +357,6 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
-        align-items: center;
         gap: 93px;
     }
 
@@ -398,7 +398,6 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
-        align-items: center;
         gap: 93px;
     }
 
@@ -440,7 +439,6 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
-        align-items: center;
         gap: 93px;
     }
 
@@ -504,20 +502,209 @@
         line-height: 28px;
     }
 
+    .hamburger {
+        display: none;
+        font-size: 30px;
+        cursor: pointer;
+    }
 
-    @media screen and (max-width: 500px) {
+    .titlespan {
+        display: flex;
+        float: left;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /*Mobile view*/
+    @media screen and (max-width: 766px) {
+
+        body {
+            padding: 20px;
+        }
+
+        .menu {
+            display: none;
+        }
+
+        .hamburger {
+            display: block;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
         .hero {
             flex-direction: column;
-            text-align: center;
+            justify-content: flex-start;
         }
+
+        .h1 {
+            height: auto;
+            width: auto;
+        }
+
+        .Title {
+            order: 1;
+        }
+
+        .box2 {
+            order: 2;
+        }
+
+        .box1text {
+            order: 3;
+        }
+
+        .Bookaconsultation {
+            order: 4;
+            width: 100%;
+        }
+
+        .company {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .company img {
+            width: 40%;
+        }
+
+        .label {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            max-width: 768px
+        }
+
+        .titlespan {
+            display: flex;
+            float: left;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .Title {
+            order: 1;
+        }
+
+        .box2 {
+            order: 2;
+        }
+
+        .box1 {
+            order: 3;
+        }
+
+        .greentitle {
+            display: inline-block;
+            width: auto;
+            white-space: nowrap;
+        }
+
+        .whitetitle {
+            display: inline-block;
+            width: auto;
+            white-space: nowrap;
+        }
+
+        .sectioncontainer {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: auto;
+            padding-left: 0;
+            padding-right: 0;
+            padding: 0 20px;
+            margin: 40px auto;
+            margin-top: 80px;
+        }
+
+        .section1,
+        .section2,
+        .section3,
+        .section4,
+        .section5,
+        .section6 {
+            width: 100%;
+            max-width: 400px;
+            height: 100%;
+            align-items: flex-end;
+            gap: 0;
+        }
+
+        .sectiontext {
+            display: none;
+        }
+
+        .Bottomhero {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 40px;
+            max-width: 440px;
+            height: auto;
+            padding: 30px;
+            margin: 40px auto;
+        }
+
+        .Bottomheroright {
+            display: none;
+        }
+
+        .Bottomherotitle {
+            width: auto;
+            height: auto;
+        }
+
+        .Bottomherotext {
+            width: 100%;
+            height: auto;
+        }
+
+        .Bottomheroleft {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+            gap: 20px;
+        }
+
+        .Getyourfreeproposal {
+            width: 100%;
+        }
+
     }
 </style>
 
 <body>
     <div class="container">
-        <div class="logo">
-            <img class="logo" src="images/Icon.png" width="100" alt="logo">
-            <p class="positivus">Positivus</p>
+        <div class="header">
+            <div class="logo">
+                <img class="logoimg" src="images/Icon.png" width="100" alt="logo">
+                <p class="positivus">Positivus</p>
+            </div>
+            <div class="hamburger">
+                <div class="hamburgericon">☰</div>
+            </div>
         </div>
         <div class="menu">
             <div>About us</div>
@@ -530,14 +717,21 @@
     </div>
 
     <div class="hero">
-        <div class="box1">
-            <h1>Navigating the digital landscape for success</h1>
-            <p class="box1text">Our digital marketing agency helps businesses grow and succeed online through a range of
-                services
-                including
-                SEO,
-                PPC, social media marketing, and content creation.</p>
-            <button class="Bookaconsultation">Book a consultation</button>
+        <div class="heroleft">
+            <div class="Title">
+                <h1>Navigating the digital landscape for success</h1>
+            </div>
+            <div class="herobox1">
+                <div class="box1">
+                    <p class="box1text">Our digital marketing agency helps businesses grow and succeed online through a
+                        range of
+                        services
+                        including
+                        SEO,
+                        PPC, social media marketing, and content creation.</p>
+                    <button class="Bookaconsultation">Book a consultation</button>
+                </div>
+            </div>
         </div>
         <div class="box2">
             <img class="illustration" src="images/Illustration.png" alt="Illustration">
@@ -563,9 +757,10 @@
     <div class="sectioncontainer">
         <div class="section1">
             <div class="section1left">
-                <span class="greentitle">
-                    Search engine<br>optimization
-                </span>
+                <div class="titlespan">
+                    <span class="greentitle">Search engine</span>
+                    <span class="greentitle">optimization</span>
+                </div>
                 <div class="learnmoreblack">
                     <img src="images/green-dark.png" alt="green-dark">
                     <p class="sectiontext">Learn more</p>
@@ -578,9 +773,10 @@
 
         <div class="section2">
             <div class="section2left">
-                <span class="whitetitle">
-                    Pay-per-click<br>advertising
-                </span>
+                <div class="titlespan">
+                    <span class="whitetitle">Pay-per-click</span>
+                    <span class="whitetitle">advertising </span>
+                </div>
                 <div class="learnmoreblack">
                     <img src="images/green-dark.png" alt="green-dark">
                     <p class="sectiontext">Learn more</p>
@@ -593,9 +789,10 @@
 
         <div class="section3">
             <div class="section3left">
-                <span class="greentitle">
-                    Social Media<br>Marketing
-                </span>
+                <div class="titlespan">
+                    <span class="whitetitle"> Social Media</span>
+                    <span class="whitetitle">Marketing</span>
+                </div>
                 <div class="learnmorewhite">
                     <img src="images/black-light.png" alt="black-light">
                     <p class="sectiontext">Learn more</p>
@@ -608,9 +805,10 @@
 
         <div class="section4">
             <div class="section4left">
-                <span class="whitetitle">
-                    Email<br>Marketing
-                </span>
+                <div class="titlespan">
+                    <span class="greentitle"> Email</span>
+                    <span class="greentitle">Marketing</span>
+                </div>
                 <div class="learnmoreblack">
                     <img src="images/green-dark.png" alt="green-dark">
                     <p class="sectiontext">Learn more</p>
@@ -623,9 +821,10 @@
 
         <div class="section5">
             <div class="section5left">
-                <span class="whitetitle">
-                    Content<br>Creation
-                </span>
+                <div class="titlespan">
+                    <span class="whitetitle">Content</span>
+                    <span class="whitetitle">Creation </span>
+                </div>
                 <div class="learnmoreblack">
                     <img src="images/green-dark.png" alt="green-dark">
                     <p class="sectiontext">Learn more</p>
@@ -638,9 +837,10 @@
 
         <div class="section6">
             <div class="section6left">
-                <span class="greentitle">
-                    Analytics and<br>Tracking
-                </span>
+                <div class="titlespan">
+                    <span class="greentitle">Analytics and</span>
+                    <span class="greentitle">Tracking</span>
+                </div>
                 <div class="learnmorewhite">
                     <img src="images/black-light.png" alt="black-light">
                     <p class="sectiontext">Learn more</p>
@@ -654,7 +854,8 @@
         <div class="Bottomhero">
             <div class="Bottomheroleft">
                 <p class="Bottomherotitle">Let’s make things happen</p>
-                <p class="Bottomherotext">Contact us today to learn more about how our digital marketing services can
+                <p class="Bottomherotext">Contact us today to learn more about how our digital marketing services
+                    can
                     help
                     your business grow and succeed online.</p>
                 <button class="Getyourfreeproposal">Get your free proposal</button>
