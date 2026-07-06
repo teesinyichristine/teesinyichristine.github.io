@@ -69,21 +69,18 @@
         font-size: 20px;
     }
 
+    .heromobile {
+        display: none;
+    }
 
     .hero {
         display: flex;
         justify-content: space-between;
-        flex-direction: row;
         align-items: stretch;
         margin: auto;
         gap: 50px;
         max-width: 1440px;
         width: 85%;
-    }
-
-    .Title,
-    .herobox1 {
-        flex-direction: column;
     }
 
     h1 {
@@ -561,30 +558,32 @@
         }
 
         .hero {
+            display: none;
+        }
+
+        .heromobile {
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
+            width: 90%;
+            margin: auto;
+            display: flex;
         }
 
-        .heroleft {
+        .mobile-title {
             order: 1;
         }
 
-        .h1 {
-            height: auto;
-            width: auto;
-        }
-
-        .Title {
-            order: 1;
-        }
-
-        .box2 {
+        .mobile-image {
             order: 2;
+            text-align: center;
+            margin: 30px 0;
         }
 
-        .herobox1 {
+        .mobile-text {
             order: 3;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
         }
 
         Button.Bookaconsultation {
@@ -632,7 +631,7 @@
 
         .sectioncontainer {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             width: 100%;
             height: auto;
             padding-left: 0;
@@ -721,26 +720,50 @@
     </div>
 
     <div class="hero">
-
-        <div class="Title">
-            <h1>Navigating the digital landscape for success</h1>
-        </div>
-        <div class="herobox1">
-            <div class="box1">
-                <p class="box1text">Our digital marketing agency helps businesses grow and succeed online through a
-                    range of
-                    services
-                    including
-                    SEO,
-                    PPC, social media marketing, and content creation.</p>
-                <button class="Bookaconsultation">Book a consultation</button>
+        <div class="heroleft">
+            <div class="Title">
+                <h1>Navigating the digital landscape for success</h1>
+            </div>
+            <div class="herobox1">
+                <div class="box1">
+                    <p class="box1text">Our digital marketing agency helps businesses grow and succeed online through a
+                        range of
+                        services
+                        including
+                        SEO,
+                        PPC, social media marketing, and content creation.</p>
+                    <button class="Bookaconsultation">Book a consultation</button>
+                </div>
             </div>
         </div>
-        <div class="box2">
-            <img class="illustration" src="images/Illustration.png" alt="Illustration">
+        <div class="heroright">
+            <div class="box2">
+                <img class="illustration" src="images/Illustration.png" alt="Illustration">
+            </div>
         </div>
     </div>
 
+    <div class="heromobile">
+        <div class="mobile-title">
+            <h1>Navigating the digital landscape for success</h1>
+        </div>
+
+        <div class="mobile-image">
+            <img class="illustration" src="images/Illustration.png" alt="Illustration">
+        </div>
+
+        <div class="mobile-text">
+            <p class="box1text">
+                Our digital marketing agency helps businesses grow and succeed online
+                through a range of services including SEO, PPC, social media marketing,
+                and content creation.
+            </p>
+
+            <button class="Bookaconsultation">
+                Book a consultation
+            </button>
+        </div>
+    </div>
 
     <div class="company">
         <img src="images/amazon.png" alt="amazon">

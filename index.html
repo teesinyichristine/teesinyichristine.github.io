@@ -4,13 +4,296 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>index</title>
 </head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+    body {
+        background-color: #D6F4ED;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px;
+        background-color: rgb(83, 98, 158);
+        padding: 15px 40px;
+    }
+
+    .logo {
+        font-family: "Space Grotesk", sans-serif;
+    }
+
+    .sociallinks {
+        display: flex;
+        gap: 15px;
+    }
+
+    img {
+        margin: 5px;
+        text-decoration: none;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    .profileimg {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .profile {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logoh2 {
+        color: #D6F4ED;
+        font-family: "Space Grotesk", sans-serif;
+    }
+
+    .nameh2 {
+        color: #473472;
+        padding: 5px;
+        font-family: "Space Grotesk", sans-serif;
+    }
+
+    h3 {
+        color: #473472;
+        font-family: "Space Grotesk", sans-serif;
+    }
+
+    p {
+        color: #473472;
+        font-family: "Space Grotesk", sans-serif;
+        max-width: 800px;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    .exerciselist {
+        max-width: 1420px;
+        margin: 50px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .exercise {
+        width: 300px;
+        background-color: rgb(135, 186, 195, 0.7);
+        border-radius: 16px;
+        padding: 20px;
+        min-height: 170px;
+    }
+
+    .exerciseheader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        justify-content: center;
+        border-bottom: 1px solid black;
+        padding-bottom: 12px;
+        margin-bottom: 15px;
+    }
+
+    .exercisetitle {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .exercisetext {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .exerciseheader img {
+        width: 20px;
+        height: 20px;
+        margin: 0;
+    }
+
+    .exerciseheader p {
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        color: #473472;
+    }
+
+    .exercisebody {
+        text-align: center;
+    }
+
+    .exercisebody a {
+        display: block;
+        text-decoration: none;
+        color: #473472;
+        font-family: "Space Grotesk", sans-serif;
+        margin: 12px 0;
+    }
+
+    .exerciseheader p {
+        justify-content: center;
+    }
+
+    .exercise-wide {
+        width: 1042px;
+        background-color: rgb(135, 186, 195, 0.7);
+        border: 1px solid #ccc;
+        border-radius: 16px;
+        padding: 20px;
+        min-height: 170px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(83, 98, 158);
+        padding: 30px 20px;
+    }
+
+    .footer-social {
+        margin-bottom: 15px;
+    }
+
+    .disclaimer {
+        font-size: 12px;
+        margin: 0;
+        font-family: "Space Grotesk", sans-serif;
+        color: #D6F4ED;
+    }
+
+    .footer-socialicon {
+        margin: 5px;
+        text-decoration: none;
+    }
+</style>
 
 <body>
-    <img src="images/instagram.png" alt="Instagram" width="30"><br> <a
-        href="https://www.instagram.com/sno_ofc_info/">Sekai No
-        Owari</a>
+    <div class="header">
+        <div class="logo">
+            <h2 class="logoh2">LOGO</h2>
+        </div>
+        <div class="socialicon">
+            <div class="sociallinks">
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="images/instagram (1).png" alt="Instagram Icon" width="30">
+                </a>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="images/facebook.png" alt="Facebook Icon" width="30">
+                </a>
+                <a href="https://x.com/" target="_blank">
+                    <img src="images/twitter.png" alt="X Icon" width="30">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="profile">
+            <img class="profileimg" src="images/profile.photo.jpg" alt="Profile">
+            <h2 class="nameh2">Tee Sin Yi Christine</h2>
+            <h3>Web Publishing</h3>
+            <p>Hi! My name is Christine, and I am a Digital Media student. I enjoy exploring different forms of
+                digital
+                content,
+                including graphic design, video editing, and web design. I am interested in how creativity and
+                technology
+                can
+                work together to create engaging experiences for people.</p>
+        </div>
+    </div>
+
+    <div class="exerciselist">
+
+        <div class="exercise">
+            <div class="exerciseheader">
+                <img class="week" src="images/7-days.png" alt="week">
+                <p>Week 2</p>
+            </div>
+            <div class="exercisebody">
+                <a href="week2/button.html">Exercise 1</a>
+                <a href="week2/self-intro.html">Exercise 2</a>
+                <a href="week2/artist.html">Exercise 3</a>
+            </div>
+        </div>
+
+        <div class="exercise">
+            <div class="exerciseheader">
+                <img src="images/7-days.png" alt="week">
+                <p>Week 3</p>
+            </div>
+
+            <div class="exercisebody">
+                <a href="week3/flexbox1.html">Exercise 1</a>
+                <a href="week3/flexbox2.html">Exercise 2</a>
+            </div>
+        </div>
+
+        <div class="exercise">
+            <div class="exerciseheader">
+                <img src="images/7-days.png" alt="week">
+                <p>Week 4</p>
+            </div>
+            <div class="exercisebody">
+                <a href="week4/menu.html">Exercise 1</a>
+                <a href="week4/home.html">Exercise 2</a>
+            </div>
+
+        </div>
+
+        <div class="exercise-wide">
+            <div class="exerciseheader">
+                <img src="images/7-days.png" alt="week">
+                <p>Week 5</p>
+            </div>
+            <div class="exercisebody">
+                <a href="#">Exercise 1</a>
+                <a href="#">Exercise 2</a>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-social">
+            <div class="footer-socialicon">
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="images/instagram (1).png" alt="Instagram Icon" width="20">
+                </a>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="images/facebook.png" alt="Facebook Icon" width="20">
+                </a>
+                <a href="https://x.com/" target="_blank">
+                    <img src="images/twitter.png" alt="X Icon" width="20">
+                </a>
+            </div>
+        </div>
+
+        <p class="disclaimer">@2026 Tee Sin Yi. All rights reserved.
+        </p>
+    </footer>
 
 
 </body>
