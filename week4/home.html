@@ -73,11 +73,17 @@
     .hero {
         display: flex;
         justify-content: space-between;
+        flex-direction: row;
         align-items: stretch;
         margin: auto;
         gap: 50px;
         max-width: 1440px;
         width: 85%;
+    }
+
+    .Title,
+    .herobox1 {
+        flex-direction: column;
     }
 
     h1 {
@@ -102,6 +108,10 @@
         font-weight: 400;
         font-size: 20px;
         line-height: 28px;
+    }
+
+    .box1 {
+        width: 100%;
     }
 
     .box1text {
@@ -551,8 +561,13 @@
         }
 
         .hero {
+            display: flex;
             flex-direction: column;
             justify-content: flex-start;
+        }
+
+        .heroleft {
+            order: 1;
         }
 
         .h1 {
@@ -568,13 +583,14 @@
             order: 2;
         }
 
-        .box1text {
+        .herobox1 {
             order: 3;
         }
 
-        .Bookaconsultation {
-            order: 4;
+        Button.Bookaconsultation {
             width: 100%;
+            max-width: 500px;
+            justify-content: space-between;
         }
 
         .company {
@@ -602,18 +618,6 @@
             align-items: flex-start;
         }
 
-        .Title {
-            order: 1;
-        }
-
-        .box2 {
-            order: 2;
-        }
-
-        .box1 {
-            order: 3;
-        }
-
         .greentitle {
             display: inline-block;
             width: auto;
@@ -628,7 +632,7 @@
 
         .sectioncontainer {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             width: 100%;
             height: auto;
             padding-left: 0;
@@ -717,26 +721,26 @@
     </div>
 
     <div class="hero">
-        <div class="heroleft">
-            <div class="Title">
-                <h1>Navigating the digital landscape for success</h1>
-            </div>
-            <div class="herobox1">
-                <div class="box1">
-                    <p class="box1text">Our digital marketing agency helps businesses grow and succeed online through a
-                        range of
-                        services
-                        including
-                        SEO,
-                        PPC, social media marketing, and content creation.</p>
-                    <button class="Bookaconsultation">Book a consultation</button>
-                </div>
+
+        <div class="Title">
+            <h1>Navigating the digital landscape for success</h1>
+        </div>
+        <div class="herobox1">
+            <div class="box1">
+                <p class="box1text">Our digital marketing agency helps businesses grow and succeed online through a
+                    range of
+                    services
+                    including
+                    SEO,
+                    PPC, social media marketing, and content creation.</p>
+                <button class="Bookaconsultation">Book a consultation</button>
             </div>
         </div>
         <div class="box2">
             <img class="illustration" src="images/Illustration.png" alt="Illustration">
         </div>
     </div>
+
 
     <div class="company">
         <img src="images/amazon.png" alt="amazon">
@@ -749,7 +753,8 @@
 
     <div class="label">
         <button class="buttonservices">Services</button>
-        <p class="servicestext">At our digital marketing agency, we offer a range of services to help businesses grow
+        <p class="servicestext">At our digital marketing agency, we offer a range of services to help businesses
+            grow
             and succeed online.
             These services include:</p>
     </div>
