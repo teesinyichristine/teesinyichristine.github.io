@@ -5,195 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
-    body {
-        background-color: #D6F4ED;
-    }
-
-    .header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 20px;
-        background-color: rgb(83, 98, 158);
-        padding: 15px 40px;
-    }
-
-    .logo {
-        font-family: "Space Grotesk", sans-serif;
-    }
-
-    .sociallinks {
-        display: flex;
-        gap: 15px;
-    }
-
-    img {
-        margin: 5px;
-        text-decoration: none;
-    }
-
-    .content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 40px;
-    }
-
-    .profileimg {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        object-fit: cover;
-        margin-bottom: 20px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .profile {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .logoh2 {
-        color: #D6F4ED;
-        font-family: "Space Grotesk", sans-serif;
-    }
-
-    .nameh2 {
-        color: #473472;
-        padding: 5px;
-        font-family: "Space Grotesk", sans-serif;
-    }
-
-    h3 {
-        color: #473472;
-        font-family: "Space Grotesk", sans-serif;
-    }
-
-    p {
-        color: #473472;
-        font-family: "Space Grotesk", sans-serif;
-        max-width: 800px;
-        text-align: center;
-        line-height: 1.6;
-    }
-
-    .exerciselist {
-        max-width: 1420px;
-        margin: 50px auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 30px;
-    }
-
-    .exercise {
-        width: 300px;
-        background-color: rgb(135, 186, 195, 0.7);
-        border-radius: 16px;
-        padding: 20px;
-        min-height: 170px;
-    }
-
-    .exerciseheader {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 5px;
-        justify-content: center;
-        border-bottom: 1px solid black;
-        padding-bottom: 12px;
-        margin-bottom: 15px;
-    }
-
-    .exercisetitle {
-        font-size: 20px;
-        padding: 10px;
-    }
-
-    .exercisetext {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: auto;
-    }
-
-    .exerciseheader img {
-        width: 20px;
-        height: 20px;
-        margin: 0;
-    }
-
-    .exerciseheader p {
-        font-family: "Space Grotesk", sans-serif;
-        font-size: 20px;
-        font-weight: 500;
-        color: #473472;
-    }
-
-    .exercisebody {
-        text-align: center;
-    }
-
-    .exercisebody a {
-        display: block;
-        text-decoration: none;
-        color: #473472;
-        font-family: "Space Grotesk", sans-serif;
-        margin: 12px 0;
-    }
-
-    .exerciseheader p {
-        justify-content: center;
-    }
-
-    .exercise-wide {
-        width: 1042px;
-        background-color: rgb(135, 186, 195, 0.7);
-        border: 1px solid #ccc;
-        border-radius: 16px;
-        padding: 20px;
-        min-height: 170px;
-    }
-
-    footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: rgb(83, 98, 158);
-        padding: 30px 20px;
-    }
-
-    .footer-social {
-        margin-bottom: 15px;
-    }
-
-    .disclaimer {
-        font-size: 12px;
-        margin: 0;
-        font-family: "Space Grotesk", sans-serif;
-        color: #D6F4ED;
-    }
-
-    .footer-socialicon {
-        margin: 5px;
-        text-decoration: none;
-    }
-</style>
 
 <body>
     <div class="header">
         <div class="logo">
-            <h2 class="logoh2">LOGO</h2>
+            <a href="index.html" target="_blank">
+                <img src="images/logowhite.png" alt="logoimg" width="100">
+            </a>
         </div>
         <div class="socialicon">
             <div class="sociallinks">
@@ -230,6 +51,17 @@
         <div class="exercise">
             <div class="exerciseheader">
                 <img class="week" src="images/7-days.png" alt="week">
+                <p>Week 1</p>
+            </div>
+            <div class="exercisebody">
+                <a href="week1/exe1.html">Exercise 1</a>
+                <a href="week1/exe2.html">Exercise 2</a>
+            </div>
+        </div>
+
+        <div class="exercise">
+            <div class="exerciseheader">
+                <img class="week" src="images/7-days.png" alt="week">
                 <p>Week 2</p>
             </div>
             <div class="exercisebody">
@@ -259,18 +91,6 @@
             <div class="exercisebody">
                 <a href="week4/menu.html">Exercise 1</a>
                 <a href="week4/home.html">Exercise 2</a>
-            </div>
-
-        </div>
-
-        <div class="exercise-wide">
-            <div class="exerciseheader">
-                <img src="images/7-days.png" alt="week">
-                <p>Week 5</p>
-            </div>
-            <div class="exercisebody">
-                <a href="#">Exercise 1</a>
-                <a href="#">Exercise 2</a>
             </div>
 
         </div>
