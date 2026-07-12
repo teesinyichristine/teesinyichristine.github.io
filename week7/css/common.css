@@ -1,0 +1,492 @@
+/* === RESET / NORMALIZE === */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+* img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* === BASE VARIABLES === */
+:root {
+    --primary: #B9FF66;
+    --black: #191A23;
+    --white: #FFFFFF;
+    --gray: #F3F3F3;
+
+    --text-dark: #000000;
+    --text-light: #191A23;
+
+    --font-base: "Space Grotesk", sans-serif;
+
+    --radius-small: 7px;
+    --radius-medium: 14px;
+    --radius-large: 45px;
+}
+
+/* === GLOBAL TYPOGRAPHY  === */
+body {
+    background-color: white;
+}
+
+h1 {
+    font-family: "Space Grotesk", sans-serif;
+    font-style: normal;
+    font-size: 60px;
+    font-weight: 500;
+    max-width: 531px;
+    width: 100%;
+    line-height: 120%;
+}
+
+.box1text {
+    max-width: 498px;
+    width: 100%;
+    font-weight: 400;
+    line-height: 28px;
+    font-size: 20px;
+    font-family: "Space Grotesk", sans-serif;
+    padding-bottom: 10px;
+}
+
+.servicestext {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 46px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: "Space Grotesk", sans-serif;
+    margin: 0 auto;
+}
+
+.greentitle {
+    background-color: #B9FF66;
+    border-radius: 7px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    font-style: medium;
+    line-height: 120%;
+    padding: 4px 8px;
+    margin: 0;
+}
+
+.sectiontext {
+    margin: 0;
+}
+
+.whitetitle {
+    background-color: #FFFFFF;
+    border-radius: 7px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    font-style: medium;
+    line-height: 120%;
+    padding: 4px 8px;
+    margin: 0;
+}
+
+.Bottomherotitle {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    height: 38px;
+    width: 500px;
+    margin: 0;
+}
+
+.Bottomherotext {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    height: 69px;
+    width: 500px;
+    margin: 0;
+}
+
+
+
+
+
+/* === Reusable Components  === */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    padding: 20px;
+    margin: auto;
+    width: 85%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 10%;
+}
+
+.positivus {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    width: 170px;
+}
+
+img.logo {
+    width: 100%;
+    height: auto;
+}
+
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 40px;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+button.Requestaquote {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border: rgb(0, 0, 0) 1px solid;
+    border-radius: 14px;
+    text-align: center;
+    height: 68px;
+    width: 231px;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.Getyourfreeproposal {
+    color: white;
+    background-color: black;
+    border-radius: 14px;
+    text-align: center;
+    gap: 10px;
+    height: 68px;
+    width: 288px;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.titlespan {
+    display: flex;
+    float: left;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer {
+    width: 85%;
+    margin: 80px auto 0;
+    padding: 50px 60px;
+    box-sizing: border-box;
+    background-color: var(--black);
+    border-radius: 45px 45px 0 0;
+}
+
+.positivuswhite {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    width: 170px;
+    color: var(--white);
+}
+
+.footertop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footerlogo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 10%;
+}
+
+.footermenu {
+    display: flex;
+    gap: 30px;
+    font-family: var(--font-base);
+    color: var(--white);
+}
+
+.footermenu a {
+    color: var(--white);
+}
+
+.socialmedia {
+    display: flex;
+    gap: 15px;
+}
+
+.socialicon {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialicon img {
+    width: 16px;
+    height: 16px;
+}
+
+.footermiddle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    font-family: var(--font-base);
+}
+
+.contacttitle {
+    background-color: var(--primary);
+    border-radius: 7px;
+    padding: 3px 7px;
+}
+
+.contactinfo p {
+    color: var(--white);
+}
+
+.subscribe {
+    background-color: #292A32;
+    padding: 50px 40px;
+    border-radius: 14px;
+    display: flex;
+    gap: 20px;
+}
+
+.subscribe input {
+    padding: 20px;
+    background: transparent;
+    border: 1px solid var(--white);
+    border-radius: 14px;
+    font-family: var(--font-base);
+    font-size: large;
+    color: var(--white);
+}
+
+.subscribe button {
+    padding: 20px 30px;
+    background-color: var(--primary);
+    border: none;
+    border-radius: 14px;
+    font-family: var(--font-base);
+    font-size: large;
+}
+
+.footerbottom {
+    display: flex;
+    gap: 40px;
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 1px solid var(--white);
+}
+
+.footerbottom p,
+.footerbottom a {
+    color: var(--white);
+}
+
+/*Mobile view*/
+@media screen and (max-width: 766px) {
+
+    body {
+        padding: 20px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hero {
+        display: none;
+    }
+
+    .heromobile {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+        display: flex;
+    }
+
+    .mobile-title {
+        order: 1;
+    }
+
+    .mobile-image {
+        order: 2;
+        text-align: center;
+        margin: 30px 0;
+    }
+
+    .mobile-text {
+        order: 3;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    Button.Bookaconsultation {
+        width: 100%;
+        max-width: 500px;
+        justify-content: space-between;
+    }
+
+    .company {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .company img {
+        width: 40%;
+    }
+
+    .label {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        max-width: 768px
+    }
+
+    .titlespan {
+        display: flex;
+        float: left;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .greentitle {
+        display: inline-block;
+        width: auto;
+        white-space: nowrap;
+    }
+
+    .whitetitle {
+        display: inline-block;
+        width: auto;
+        white-space: nowrap;
+    }
+
+    .sectioncontainer {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        padding-left: 0;
+        padding-right: 0;
+        padding: 0 20px;
+        margin: 40px auto;
+        margin-top: 80px;
+    }
+
+    .section1,
+    .section2,
+    .section3,
+    .section4,
+    .section5,
+    .section6 {
+        width: 100%;
+        max-width: 400px;
+        height: 100%;
+        align-items: flex-end;
+        gap: 0;
+    }
+
+    .sectiontext {
+        display: none;
+    }
+
+    .Bottomhero {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 40px;
+        max-width: 440px;
+        height: auto;
+        padding: 30px;
+        margin: 40px auto;
+    }
+
+    .Bottomheroright {
+        display: none;
+    }
+
+    .Bottomherotitle {
+        width: auto;
+        height: auto;
+    }
+
+    .Bottomherotext {
+        width: 100%;
+        height: auto;
+    }
+
+    .Bottomheroleft {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .Getyourfreeproposal {
+        width: 100%;
+    }
+
+}
