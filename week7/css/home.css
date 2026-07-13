@@ -298,3 +298,179 @@ img.illustration {
     flex-direction: column;
     gap: 26px;
 }
+
+/*Mobile view*/
+@media screen and (max-width: 766px) {
+
+    body {
+        padding: 20px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hero {
+        display: none;
+    }
+
+    .heromobile {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+        display: flex;
+    }
+
+    .mobile-title {
+        order: 1;
+    }
+
+    .mobile-image {
+        order: 2;
+        text-align: center;
+        margin: 30px 0;
+    }
+
+    .mobile-text {
+        order: 3;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    Button.Bookaconsultation {
+        width: 100%;
+        max-width: 500px;
+        justify-content: space-between;
+    }
+
+    .company {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .company img {
+        width: 40%;
+    }
+
+    .label {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        max-width: 768px
+    }
+
+    .titlespan {
+        display: flex;
+        float: left;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .greentitle {
+        display: inline-block;
+        width: auto;
+        white-space: nowrap;
+    }
+
+    .whitetitle {
+        display: inline-block;
+        width: auto;
+        white-space: nowrap;
+    }
+
+    .sectioncontainer {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        padding-left: 0;
+        padding-right: 0;
+        padding: 0 20px;
+        margin: 40px auto;
+        margin-top: 80px;
+    }
+
+    .section1,
+    .section2,
+    .section3,
+    .section4,
+    .section5,
+    .section6 {
+        width: 100%;
+        max-width: 400px;
+        height: 100%;
+        align-items: flex-end;
+        gap: 0;
+    }
+
+    .sectiontext {
+        display: none;
+    }
+
+    .Bottomhero {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 40px;
+        max-width: 440px;
+        height: auto;
+        padding: 30px;
+        margin: 40px auto;
+    }
+
+    .Bottomheroright {
+        display: none;
+    }
+
+    .Bottomherotitle {
+        width: auto;
+        height: auto;
+    }
+
+    .Bottomherotext {
+        width: 100%;
+        height: auto;
+    }
+
+    .Bottomheroleft {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .Getyourfreeproposal {
+        width: 100%;
+    }
+
+}

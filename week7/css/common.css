@@ -124,6 +124,7 @@ h1 {
     padding: 20px;
     margin: auto;
     width: 85%;
+    gap: 20px;
 }
 
 .logo {
@@ -199,7 +200,7 @@ button.Requestaquote {
 
 .footer {
     width: 85%;
-    margin: 80px auto 0;
+    margin: 70px auto 0;
     padding: 50px 60px;
     box-sizing: border-box;
     background-color: var(--black);
@@ -209,7 +210,7 @@ button.Requestaquote {
 .positivuswhite {
     font-family: "Space Grotesk", sans-serif;
     font-weight: 500;
-    font-size: 40px;
+    font-size: 32px;
     width: 170px;
     color: var(--white);
 }
@@ -232,6 +233,7 @@ button.Requestaquote {
     gap: 30px;
     font-family: var(--font-base);
     color: var(--white);
+    text-decoration: underline;
 }
 
 .footermenu a {
@@ -270,6 +272,8 @@ button.Requestaquote {
     background-color: var(--primary);
     border-radius: 7px;
     padding: 3px 7px;
+    font-weight: 600;
+    font-size: large;
 }
 
 .contactinfo p {
@@ -314,179 +318,174 @@ button.Requestaquote {
 .footerbottom p,
 .footerbottom a {
     color: var(--white);
+    margin: 0;
+    font-family: var(--font-base);
 }
 
-/*Mobile view*/
-@media screen and (max-width: 766px) {
+.footerbottom a {
+    text-decoration: underline;
+}
 
-    body {
-        padding: 20px;
-    }
+.footer-mobile {
+    display: none;
+}
 
-    .menu {
+
+/*mobile view*/
+@media screen and (max-width:767px) {
+
+    .footer {
         display: none;
     }
 
-    .hamburger {
-        display: block;
-    }
-
-    .container {
+    .footer-mobile {
+        width: 85%;
+        margin: 70px auto 0;
+        box-sizing: border-box;
+        background-color: var(--black);
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         width: 100%;
-    }
-
-    .logo {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .hero {
-        display: none;
-    }
-
-    .heromobile {
-        display: flex;
+        padding: 40px 25px;
+        border-radius: 30px 30px 0 0;
         flex-direction: column;
-        width: 90%;
-        margin: auto;
-        display: flex;
     }
 
-    .mobile-title {
-        order: 1;
-    }
-
-    .mobile-image {
-        order: 2;
+    .footertop-mobile {
+        flex-direction: column;
+        align-items: center;
         text-align: center;
-        margin: 30px 0;
-    }
-
-    .mobile-text {
-        order: 3;
-        display: flex;
-        flex-direction: column;
         gap: 25px;
-    }
-
-    Button.Bookaconsultation {
-        width: 100%;
-        max-width: 500px;
+        display: flex;
         justify-content: space-between;
     }
 
-    .company {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 30px;
-    }
-
-    .company img {
-        width: 40%;
-    }
-
-    .label {
+    .footerlogo-mobile {
+        width: auto;
         display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .positivuswhite-mobile {
+        font-size: 28px;
+        width: auto;
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 500;
+        width: 170px;
+        color: var(--white);
+    }
+
+    .footermenu-mobile {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        color: transparent;
+        display: flex;
+        font-family: var(--font-base);
+        text-decoration: underline;
+    }
+
+    .footermenu-mobile a {
+        font-size: 16px;
+        color: var(--white);
+    }
+
+    .socialmedia-mobile {
+        gap: 12px;
+        display: flex;
+    }
+
+    .socialicon-mobile {
+        width: 30px;
+        height: 30px;
+        background-color: white;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .socialicon-mobile img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .footermiddle-mobile {
         flex-direction: column;
         align-items: center;
-        gap: 20px;
-        max-width: 768px
-    }
-
-    .titlespan {
+        text-align: center;
+        gap: 25px;
         display: flex;
-        float: left;
-        flex-direction: column;
-        align-items: flex-start;
+        justify-content: space-between;
+        margin-top: 30px;
+        font-family: var(--font-base);
     }
 
-    .greentitle {
-        display: inline-block;
-        width: auto;
-        white-space: nowrap;
+    .contacttitle-mobile {
+        background-color: var(--primary);
+        border-radius: 7px;
+        padding: 3px 7px;
+        font-weight: 600;
+        font-size: large;
     }
 
-    .whitetitle {
-        display: inline-block;
-        width: auto;
-        white-space: nowrap;
+    .contactinfo-mobile p {
+        color: var(--white);
     }
 
-    .sectioncontainer {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        height: auto;
-        padding-left: 0;
-        padding-right: 0;
-        padding: 0 20px;
-        margin: 40px auto;
-        margin-top: 80px;
+    .contactinfo-mobile {
+        text-align: center;
     }
 
-    .section1,
-    .section2,
-    .section3,
-    .section4,
-    .section5,
-    .section6 {
-        width: 100%;
-        max-width: 400px;
-        height: 100%;
-        align-items: flex-end;
-        gap: 0;
-    }
-
-    .sectiontext {
-        display: none;
-    }
-
-    .Bottomhero {
-        display: flex;
+    .subscribe-mobile {
         flex-direction: column;
         width: 100%;
-        gap: 40px;
-        max-width: 440px;
-        height: auto;
-        padding: 30px;
-        margin: 40px auto;
-    }
-
-    .Bottomheroright {
-        display: none;
-    }
-
-    .Bottomherotitle {
-        width: auto;
-        height: auto;
-    }
-
-    .Bottomherotext {
-        width: 100%;
-        height: auto;
-    }
-
-    .Bottomheroleft {
+        padding: 30px 20px;
+        box-sizing: border-box;
+        background-color: #292A32;
+        border-radius: 14px;
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
         gap: 20px;
     }
 
-    .Getyourfreeproposal {
+    .subscribe-mobile input {
         width: 100%;
+        box-sizing: border-box;
+        font-size: 16px;
+        padding: 15px;
+        background: transparent;
+        border: 1px solid var(--white);
+        border-radius: 14px;
+        font-family: var(--font-base);
+        color: var(--white);
+    }
+
+    .subscribe-mobile button {
+        width: 100%;
+        font-size: 16px;
+        padding: 15px;
+        background-color: var(--primary);
+        border: none;
+        border-radius: 14px;
+        font-family: var(--font-base);
+    }
+
+    .footerbottom-mobile {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        display: flex;
+        margin-top: 50px;
+        padding-top: 30px;
+        border-top: 1px solid var(--white);
+    }
+
+    .footerbottom-mobile p,
+    .footerbottom-mobile a {
+        color: var(--white);
+        margin: 0;
+        font-family: var(--font-base);
     }
 
 }
