@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(241, 247, 212);
+}
+
+h1 {
+    color: rgb(74, 68, 102);
+}
+
+h2 {
+    color: rgb(110, 173, 188);
+    border: 1px solid black;
+    border-style: dashed;
+    padding: 5px;
+    width: 600px;
+}
+
+p {
+    color: rgb(159, 203, 173);
+    font-family: Times New Roman, Times, serif;
+    max-width: 600px;
+}
+
+img {
+    margin: 5px;
+    text-decoration: none;
+}
