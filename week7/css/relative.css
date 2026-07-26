@@ -1,0 +1,108 @@
+/* === Reset / Normalize === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* === Global Typography === */
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: rgba(84, 84, 84);
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: rgba(84, 84, 84);
+    text-align: center;
+}
+
+.subtitle {
+    color: rgba(84, 84, 84);
+    font-size: 16px;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* ===== Reusable Components ==== */
+.container {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    width: calc(33.33% - 14px);
+    border-radius: 15px;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+}
+
+.content {
+    position: relative;
+    bottom: 60px;
+    background: white;
+    margin: 0 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content h3 {
+    font-size: 16px;
+    margin-bottom: 12px;
+    line-height: 1.4;
+    text-align: center;
+    width: 95%;
+}
+
+.content a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* === Responsive === */
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+
+        .content {
+            bottom: 25px;
+            margin: 0 15px;
+            padding: 15px;
+        }
+
+        .content h3 {
+            font-size: 14px;
+        }
+    }
+}
