@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Test</title>
+    <style>
+        div.relative {
+            position: relative;
+            width: 50%;
+            height: 200px;
+            border: 2px solid green;
+            margin: auto;
+        }
+
+        div.box1 {
+            position: absolute;
+            right: -50px;
+            width: 120px;
+            border: 2px solid red;
+        }
+
+        div.box2 {
+            position: absolute;
+            left: -100px;
+            top: 90px;
+            width: 120px;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <div class="relative">
+        <div class="box1">
+            <p>Test</p>
+        </div>
+        <div class="box2">
+            <p>I am bottom border</p>
+        </div>
+    </div>
+</body>
+
+</html>

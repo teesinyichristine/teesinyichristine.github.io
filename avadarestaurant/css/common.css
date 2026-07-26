@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* === ROOT VARIABLES === */
+:root {
+    --color-text-dark: #000000;
+    --color-text-light: #FFFFFF;
+    --color-light-grey: #F2F2F2;
+    --color-grey: #D3D3D3;
+    --color-hover: #BDA16B;
+    --color-nav-background: #333333;
+
+    --font-title: "Bebas Neue", sans-serif;
+    --font-base: "Lora", serif;
+    --font-heading: font-family: "Work Sans", sans-serif;
+
+    --font-hero-title: 95px;
+    --font-title: 70px;
+    --font-sub-title: 56px;
+    --font-object-title: 30px;
+    --font-sub-object-title: 25px;
+    --font-section-title: 46px;
+    --font-menu-title: 40px;
+    --font-paragraph: 19px;
+    --font-eyebrow-heading: 15px;
+    --font-button: 15px;
+}
+
+/* === GLOBAL TYPOGRAPHY  === */
+body {
+    font-family: var(--font-base);
+    color: var(--color-text-dark);
+    line-height: 33.3px;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    h1 {
+        font-size: var(--font-hero-title);
+        line-height: 114px;
+    }
+
+    h2 {
+        font-size: 70px;
+        line-height: 84px;
+    }
+
+    h3 {
+        font-size: 56px;
+        line-height: 64px;
+    }
+
+    h4 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    h5 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    /* === Class Typo === */
+    .section-title {
+        font-size: var(--font-section-title);
+        line-height: 55.2px;
+        font-weight: Italic;
+    }
+
+    .menu-title {
+        font-size: var(--font-menu-title);
+        line-height: 48px;
+        font-weight: Italic;
+    }
+
+    .paragraph {
+        font-size: var(--font-paragraph);
+        line-height: 33.3px;
+    }
+
+    .eyebrow-heading {
+        font-size: var(--font-eyebrow-heading);
+        line-height: 18px;
+        letter-spacing: 1.4px;
+    }
+
+    .button {
+        font-size: var(--font-button);
+        line-height: 18px;
+        letter-spacing: 1px;
+    }
+
+    /* === BUTTON === */
+    .btn {
+        padding: 13px 29px
+    }
+
+    .btn-pink
+
+    /* === ICON === */
+    .icon {
+        padding: 15px;
+        margin: 5px;
+        width: 15px;
+        border-radius: 15px
+    }
+
+    /* === HEADER === */
+    .header {}
+
+}
