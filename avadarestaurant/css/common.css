@@ -19,6 +19,8 @@
     --font-title: "Bebas Neue", sans-serif;
     --font-base: "Lora", serif;
     --font-heading: "Work Sans", sans-serif;
+
+    --font-hero-title: 95px;
     --font-title: 70px;
     --font-sub-title: 56px;
     --font-object-title: 30px;
@@ -29,7 +31,6 @@
     --font-eyebrow-heading: 15px;
     --font-button: 15px;
     --font-sub-navbar: 13px;
-
     --btn-padding: 13px 29px;
     --btn-background-color: transparent;
 }
